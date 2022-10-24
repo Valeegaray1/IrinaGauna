@@ -7,7 +7,7 @@
 body {font-family: 'Open Sans', sans-serif;}
 
 .contenedor{
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     overflow: hidden;
     margin: auto;
@@ -226,6 +226,8 @@ header {
     width: 80%;
     display: block;
     margin: 0 auto;
+    object-fit: contain;
+    
 }
 .n-expert{ 
     display: inline-block;
@@ -343,3 +345,14 @@ footer{
     }
     
 }
+
+@media (max-width: 500px) {
+   .experts {
+    flex-direction: column;
+
+   }
+   .subtitulo {
+    font-size: 20px;
+   }
+ 
+  }
